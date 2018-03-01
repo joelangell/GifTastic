@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 4 Bootstrap Gallery Templates</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>GifTastic</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
 </head>
+
 <body>
-        <div class="container" id="button-row">
-    
+    <div class="container" id="button-row">
+
+    </div>
+
+    <div class="container gallery-container">
+
+        <!-- <h1>Parks and Recreation</h1> -->
+        <div class="container" id="logo">
+            <img src="./assets/images/logo.png" alt="Parks and Rec Logo">
         </div>
-    
-        <div class="container gallery-container">
-    
-            <h1>Bootstrap 3 Gallery</h1>
-    
-            <p class="page-description">Add another option</p>
-            <input type = "text" id="gif-input">
-            <button id = "searchButton">Submit</button>
-    
-            <div class="tz-gallery">
-    
-                <div class="row" id="gif-row">
-                    
-                </div>
-    
+
+        <p class="page-description"></p>
+        <input type="text" id="gif-input" placeholder="Add Search Category..">
+        <button id="searchButton">Submit</button>
+
+        <div class="tz-gallery">
+
+            <div class="row" id="gif-row">
+
             </div>
-    
+
         </div>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script>
-            baguetteBox.run('.tz-gallery');
-        </script>
-        <script src="./assets/javascript/gif.js"></script>
-    </body>
+
+    </div>
+    <audio autoplay>
+        <source src="theme.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    <script src="./assets/javascript/gif.js"></script>
+</body>
+
 </html>
