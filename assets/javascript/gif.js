@@ -20,7 +20,7 @@ $("#searchButton").on("click", function () {
 $("#button-row").on("click", ".gif-buttons", function() {
     var gifSearch = $(this).val()
     console.log($(this).val())
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifSearch + "-parks-and-recreation&lang=en&api_key=JTlkrJVw0NOuhHwqFjcH5kgpUov3CF42&limit=12"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifSearch + "-parks-and-recreation&lang=en&api_key=JTlkrJVw0NOuhHwqFjcH5kgpUov3CF42&limit=12"
     $("#gif-row").empty()
     $.ajax({
         url: queryURL,
